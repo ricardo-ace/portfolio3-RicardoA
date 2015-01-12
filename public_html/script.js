@@ -17,15 +17,33 @@ $("document").ready(function(){
    $('h1').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe)
     
     $("h1").bind('click', mouseClick);
+    
+    $('#replcaementWText').bind('click', replaceWText);
+    
+    $('#randPara').bind('click', addAPara);
+    
+    $('#removepara').bind('click', removeAPara);
 });     
+
+function removeAPara(){
+    $ ('#randPara p:last').remove();
+}
+
+function addAPara(){
+    $('randPara').append('<p>ADDED</p>');
+}
+
+function replaceWText(){
+    $('#replaceWtext').text('replaced');
+}
 
 
 function mouseOverMe(){
-    $("h1").html("this is easy");
+    $("h1").html("do not click on these words");
 }
 
 function mouseOutMe(){
-    $('h1').html('do not click on these words');
+    $('h1').html('this is easy');
 }
 
 function mouseClick(){
