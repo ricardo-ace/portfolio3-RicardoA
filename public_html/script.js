@@ -3,18 +3,31 @@
 $("document").ready(function(){
     $('.yeah').css('background-color', 'blue');
     
-    $('div:last p:nth-child(3)').css('background-color','pink');
-
-    $('div:last p:nth-child(4)').css('background-color','red');
+    $('#superHuman').accordion({header:"h3"});
     
+    $('div:last p:nth-child(2)').css('background-color', 'red');
+    $('div:last p:nth-child(3)').css('background-color', 'white');
+    $('div:last p:nth-child(4)').css('background-color', 'red');
+    $('div:last p:nth-child(7)').css('background-color', 'white');
+    $('div:last p:nth-child(6)').css('background-color', 'red');
     $('div:last p:nth-child(5)').css('background-color','white');
+    $('div:last p:nth-child(8)').css('background-color','red');
+    $('div:last p:nth-child(9)').css('background-color','white');
+    $('div:last p:nth-child(10)').css('background-color','red');
     
+    $('div:last p:nth-child(2)').css('border-style','solid');
     $('div:last p:nth-child(3)').css('border-style','solid');
     $('div:last p:nth-child(4)').css('border-style','solid');
     $('div:last p:nth-child(5)').css('border-style','solid');
+    $('div:last p:nth-child(6)').css('border-style','solid');
+    $('div:last p:nth-child(7)').css('border-style','solid');
+    $('div:last p:nth-child(8)').css('border-style','solid');
+    $('div:last p:nth-child(9)').css('border-style','solid');
+    $('div:last p:nth-child(10)').css('border-style','solid');
     
     
-   $('h1').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe)
+    
+   $('h1').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
     $("h1").bind('click', mouseClick);
     
@@ -23,7 +36,20 @@ $("document").ready(function(){
     $('#randPara').bind('click', addAPara);
     
     $('#removepara').bind('click', removeAPara);
+    
+    $('#log').bind('click', hideTheImage);
+    
+    $('#randPara').bind('click', showTheImage);
 });     
+
+function hideTheImage(){
+    console.log('hide');
+   $('#logo').hide('slide', {}, 2000);
+}
+
+function showTheImage(){
+    $('#logo').show('fold',{}, 2500);
+}
 
 function removeAPara(){
     $ ('#randPara p:last').remove();
@@ -49,3 +75,4 @@ function mouseOutMe(){
 function mouseClick(){
     $('p').html('error, code;2323 your internet connection is not at full strength');
 }
+
