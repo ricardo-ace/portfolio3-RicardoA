@@ -1,0 +1,33 @@
+body{
+ background-image:url(http://blogs.transparent.com/language-news/files/2014/02/soccer.jpg) ;
+}
+
+
+div{
+    border-style:none;
+        border-width: 5px;
+        padding:30px;
+        border-color: #245269
+}
+
+.container{
+    border-color:black;
+}
+.row{
+    border-color:black;
+}
+
+.list-group-item{
+    border:0;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+#projects{
+    background-image: url("http://www.chronometry.ca/LooksNice/images/projects-splash3.jpg")
+}
+
+#technology{
+    background-image: url("http://goldenworks.eu/images/finalfortune/bootstrap_html_css.png") 
+}
+
