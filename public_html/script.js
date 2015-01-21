@@ -27,6 +27,8 @@ $("document").ready(function(){
     $('div:last p:nth-child(10)').css('border-style','solid');
     
     
+    
+    
     //these are tio bind all of my code lower at the bottom
    $('h1').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
@@ -76,4 +78,6 @@ function mouseOutMe(){
 function mouseClick(){
     $('p').html('error, code;2323 your internet connection is not at full strength');
 }
+
+
 
